@@ -1,0 +1,28 @@
+{
+  "logs": [
+    {
+      "id": 3,
+      "message": "Fixed 1122 wireless down",
+      "tech": "Sara Wilson",
+      "attention": false,
+      "date": "2020-09-05T10:55:03.293Z"
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    {
+      "id": 2,
+      "firstName": "Sam",
+      "lastName": "Smith"
+    },
+    {
+      "id": 3,
+      "firstName": "Sara",
+      "lastName": "Wilson"
+    }
+  ]
+}
