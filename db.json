@@ -1,13 +1,6 @@
 {
   "logs": [
     {
-      "id": 3,
-      "message": "Fixed 1122 wireless down",
-      "tech": "Sara Wilson",
-      "attention": false,
-      "date": "2020-09-05T10:55:03.293Z"
-    },
-    {
       "message": "Change network card",
       "attention": true,
       "tech": "John Doe",

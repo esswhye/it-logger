@@ -1,9 +1,9 @@
 import {
   GET_TECHS,
   DELETE_TECH,
-  ADD_LOG,
   TECHS_ERROR,
   SET_LOADING,
+  ADD_TECH,
 } from "../actions/types";
 
 const initialState = {
@@ -15,10 +15,23 @@ const initialState = {
 export default (state = initialState, action) => {
   switch (action.type) {
     case GET_TECHS:
-      console.log(action.payload);
       return {
         ...state,
         techs: action.payload,
+        loading: false,
+      };
+
+    case ADD_TECH:
+      return {
+        ...state,
+        techs: [...state.techs, action.payload],
+        loading: false,
+      };
+
+    case DELETE_TECH:
+      return {
+        ...state,
+        techs: state.techs.filter((tech) => tech.id !== action.payload),
         loading: false,
       };
 
@@ -31,6 +44,7 @@ export default (state = initialState, action) => {
     case TECHS_ERROR:
       return {
         ...state,
+        loading: false,
         error: action.payload,
       };
     default:
